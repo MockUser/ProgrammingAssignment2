@@ -5,8 +5,8 @@
 ## makeCacheMatrix returns a list with four functions:
 ## - set		sets the current matrix received as parameter
 ## - get		gets the current matrix
-## - setinverse	sets the inverted matrix
-## - getinverse	gets the inverted matrix
+## - setinverse		sets the inverted matrix
+## - getinverse		gets the inverted matrix
 
 ## The user can create a special "matrix" object calling the makeCacheMatrix(originalMatrix)
 
