@@ -3,14 +3,14 @@
 ## read from the cache. Only squared invertible matrices are handled because the solve function is used underneath.
 
 ## makeCacheMatrix returns a list with four functions:
-## - set		sets the current matrix receiving as parameter
+## - set		sets the current matrix received as parameter
 ## - get		gets the current matrix
 ## - setinverse	sets the inverted matrix
 ## - getinverse	gets the inverted matrix
 
 ## The user can create a special "matrix" object calling the makeCacheMatrix(originalMatrix)
 
-## cacheSolve returns the inverse of the special "matrix" object specified as the input argument 
+## cacheSolve returns the inverse of the special "matrix" object specified as the input parameter
 ## reading it from cache if it's been already calculated and the matrix isn't changed 
 ## or calculating from scratch.
 
@@ -31,7 +31,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## This function computes the inverse of the special matrix returned by the function makeCacheMatrix.
+## This function computes the inverse of the special "matrix" object returned by the function makeCacheMatrix.
 ## If the inverse is already been calculated (and the matrix is not changed) then the inverse matrix is retrieved from the cache.
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
